@@ -1,9 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "https://diabetespt-react-frontend.onrender.com"}})
+
 
 # Load dataset
 df = pd.read_csv('diabetes.csv')
