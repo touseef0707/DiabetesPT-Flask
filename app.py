@@ -37,9 +37,6 @@ def predict():
     output = 'Diabetic' if prediction[0] == 1 else 'Not Diabetic'
     return jsonify({'result': output})
 
-@app.route('/')
-def index():
-    return 'Hello, World!'
 
 # if __name__ == '__main__':
 #     app.run()
