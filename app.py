@@ -5,8 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://diabetespt-react-frontend.onrender.com"}})
-
+CORS(app)
 
 # Load dataset
 df = pd.read_csv('diabetes.csv')
