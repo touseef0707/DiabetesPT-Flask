@@ -16,7 +16,7 @@ rf = RandomForestClassifier()
 rf.fit(X_train, y_train)
 
 # Prediction route
-@app.route('/predict', methods=['POST'])
+@app.route('/predict_method', methods=['POST'])
 def predict():
 
     data = request.get_json()
