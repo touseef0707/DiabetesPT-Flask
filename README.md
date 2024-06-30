@@ -2,7 +2,7 @@
 
 This repository contains the backend API for the Diabetes Prediction Tool. It is designed to serve predictions about diabetes based on user input using a RandomForest classifier trained on the diabetes dataset.
 
-## API Endpoint
+## API Endpoint (note: it is currently suspended)
 
 The backend provides a single API endpoint for making predictions:
 
